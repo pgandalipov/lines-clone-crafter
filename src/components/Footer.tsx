@@ -38,13 +38,13 @@ const Footer = () => {
           {/* Логотип и описание */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="bg-gradient-primary p-2 rounded-lg">
-                <span className="text-white font-bold text-lg">DATA</span>
+              <div className="bg-gradient-primary p-2 rounded-lg shadow-glow">
+                <span className="text-white font-bold text-lg">SMART</span>
               </div>
-              <span className="font-bold text-lg text-white">FLOW</span>
+              <span className="font-bold text-lg text-white">LYTICS</span>
             </div>
             <p className="text-background/70 text-sm leading-relaxed mb-4">
-              Внедряем аналитику и повышаем эффективность бизнес-процессов через современные ИТ-решения.
+              Умная аналитика и AI-решения для трансформации вашего бизнеса. Превращаем данные в конкурентные преимущества.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-background/70 hover:text-white transition-colors">
@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-background/70 text-sm mb-4 md:mb-0">
-              © {currentYear} DataFlow. Все права защищены.
+              © {currentYear} SmartLytics. Все права защищены.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/70 hover:text-white transition-colors">

@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 84% 60%;
+    --primary: 257 89% 66%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -34,22 +34,25 @@ All colors MUST be HSL.
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 0 84% 60%;
+    --ring: 257 89% 66%;
 
-    /* Красная цветовая схема */
-    --red-primary: 0 84% 60%;
-    --red-secondary: 14 87% 56%;
-    --red-dark: 0 62% 51%;
-    --red-light: 0 93% 94%;
+    /* SmartLytics цветовая схема */
+    --smart-primary: 257 89% 66%;
+    --smart-secondary: 262 73% 80%;
+    --smart-accent: 275 85% 75%;
+    --smart-light: 240 100% 97%;
+    --smart-dark: 222 47% 11%;
 
-    /* Градиенты */
-    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(14 87% 56%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 84% 60%), hsl(14 87% 56%), hsl(0 62% 51%));
-    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 0% 98%));
+    /* Умные градиенты */
+    --gradient-primary: linear-gradient(135deg, hsl(257 89% 66%), hsl(262 73% 80%));
+    --gradient-hero: linear-gradient(135deg, hsl(257 89% 66%) 0%, hsl(245 92% 70%) 25%, hsl(262 73% 80%) 50%, hsl(275 85% 75%) 75%, hsl(290 80% 80%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(240 100% 97%), hsl(0 0% 98%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.9), hsl(257 89% 66% / 0.05));
 
-    /* Тени */
-    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.1);
-    --shadow-hero: 0 20px 40px hsl(0 84% 60% / 0.3);
+    /* Умные тени */
+    --shadow-card: 0 8px 24px hsl(257 89% 66% / 0.1);
+    --shadow-hero: 0 20px 60px hsl(257 89% 66% / 0.3);
+    --shadow-glow: 0 0 40px hsl(262 73% 80% / 0.4);
 
     /* Эффекты линий */
     --lines-gradient: linear-gradient(45deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.3));
@@ -83,8 +86,8 @@ All colors MUST be HSL.
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 84% 60%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 262 73% 80%;
+    --primary-foreground: 222 47% 11%;
 
     --secondary: 0 0% 14.9%;
     --secondary-foreground: 0 0% 98%;
@@ -100,18 +103,20 @@ All colors MUST be HSL.
 
     --border: 0 0% 14.9%;
     --input: 0 0% 14.9%;
-    --ring: 0 84% 60%;
+    --ring: 262 73% 80%;
 
-    /* Темная тема для красной схемы */
-    --red-primary: 0 84% 60%;
-    --red-secondary: 14 87% 56%;
-    --red-dark: 0 62% 51%;
-    --red-light: 0 93% 94%;
+    /* Темная тема для SmartLytics */
+    --smart-primary: 262 73% 80%;
+    --smart-secondary: 275 85% 75%;
+    --smart-accent: 290 80% 80%;
+    --smart-light: 217 33% 17%;
+    --smart-dark: 222 47% 11%;
 
-    --gradient-primary: linear-gradient(135deg, hsl(0 84% 60%), hsl(14 87% 56%));
-    --gradient-hero: linear-gradient(135deg, hsl(0 84% 60%), hsl(14 87% 56%), hsl(0 62% 51%));
-    --shadow-card: 0 4px 12px hsl(0 0% 0% / 0.3);
-    --shadow-hero: 0 20px 40px hsl(0 84% 60% / 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(262 73% 80%), hsl(275 85% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 47% 11%) 0%, hsl(240 40% 15%) 25%, hsl(257 60% 20%) 50%, hsl(262 50% 25%) 75%, hsl(275 45% 30%) 100%);
+    --shadow-card: 0 8px 24px hsl(262 73% 80% / 0.2);
+    --shadow-hero: 0 20px 60px hsl(262 73% 80% / 0.2);
+    --shadow-glow: 0 0 40px hsl(275 85% 75% / 0.3);
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -154,6 +159,10 @@ All colors MUST be HSL.
 
   .shadow-hero {
     box-shadow: var(--shadow-hero);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
   }
 
   .text-gradient {

@@ -16,10 +16,10 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Логотип */}
           <div className="flex items-center space-x-2">
-            <div className="bg-gradient-primary p-2 rounded-lg">
-              <span className="text-white font-bold text-lg">DATA</span>
+            <div className="bg-gradient-primary p-2 rounded-lg shadow-glow">
+              <span className="text-white font-bold text-lg">SMART</span>
             </div>
-            <span className="font-bold text-lg">FLOW</span>
+            <span className="font-bold text-lg text-gradient">LYTICS</span>
           </div>
 
           {/* Навигация */}

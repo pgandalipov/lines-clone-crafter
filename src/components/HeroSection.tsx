@@ -10,18 +10,18 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
-            Внедряем аналитику
+            Умная аналитика
             <br />
-            и трансформируем
+            и <span className="text-gradient bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-200">AI-решения</span>
             <br />
             <span className="relative">
-              данные в решения
-              <span className="block">для бизнеса</span>
+              для вашего
+              <span className="block">бизнеса</span>
             </span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Превращаем потоки данных в стратегические преимущества. Создаем единую аналитическую экосистему для принятия обоснованных решений
+            Используем искусственный интеллект и машинное обучение для анализа больших данных. Создаем интеллектуальные системы прогнозирования и автоматизации
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
