@@ -39,9 +39,9 @@ const Footer = () => {
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <div className="bg-gradient-primary p-2 rounded-lg">
-                <span className="text-white font-bold text-lg">7RED</span>
+                <span className="text-white font-bold text-lg">DATA</span>
               </div>
-              <span className="font-bold text-lg text-white">LINES</span>
+              <span className="font-bold text-lg text-white">FLOW</span>
             </div>
             <p className="text-background/70 text-sm leading-relaxed mb-4">
               Внедряем аналитику и повышаем эффективность бизнес-процессов через современные ИТ-решения.
@@ -83,7 +83,7 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-background/70 text-sm mb-4 md:mb-0">
-              © {currentYear} 7RED LINES. Все права защищены.
+              © {currentYear} DataFlow. Все права защищены.
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-background/70 hover:text-white transition-colors">

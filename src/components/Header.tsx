@@ -17,9 +17,9 @@ const Header = () => {
           {/* Логотип */}
           <div className="flex items-center space-x-2">
             <div className="bg-gradient-primary p-2 rounded-lg">
-              <span className="text-white font-bold text-lg">7RED</span>
+              <span className="text-white font-bold text-lg">DATA</span>
             </div>
-            <span className="font-bold text-lg">LINES</span>
+            <span className="font-bold text-lg">FLOW</span>
           </div>
 
           {/* Навигация */}

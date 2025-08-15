@@ -12,16 +12,16 @@ const HeroSection = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
             Внедряем аналитику
             <br />
-            и повышаем
+            и трансформируем
             <br />
             <span className="relative">
-              эффективность бизнес-
-              <span className="block">процессов</span>
+              данные в решения
+              <span className="block">для бизнеса</span>
             </span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Объединяем разрозненные ИТ-системы в единую инфраструктуру для бесперебойной работы вашего бизнеса
+            Превращаем потоки данных в стратегические преимущества. Создаем единую аналитическую экосистему для принятия обоснованных решений
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
