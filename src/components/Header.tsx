@@ -1,13 +1,12 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const navItems = [
-    { name: "Компетенции", href: "#competencies" },
-    { name: "Услуги", href: "#services" },
-    { name: "О нас", href: "#about" },
-    { name: "Сообщество", href: "#community" },
-    { name: "Инвесторам", href: "#investors" },
-    { name: "Проектный опыт", href: "#projects" },
+    { name: "Компетенции", href: "/competencies" },
+    { name: "Услуги", href: "/services" },
+    { name: "О нас", href: "/about" },
+    { name: "Проектный опыт", href: "/projects" },
   ];
 
   return (
@@ -15,23 +14,23 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Логотип */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="bg-gradient-primary p-2 rounded-lg shadow-glow">
               <span className="text-white font-bold text-lg">SMART</span>
             </div>
             <span className="font-bold text-lg text-gradient">LYTICS</span>
-          </div>
+          </Link>
 
           {/* Навигация */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200 hover:text-primary"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 
