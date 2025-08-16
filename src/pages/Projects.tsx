@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
 
 const projects = [
   {
@@ -56,6 +57,11 @@ const projects = [
 const categories = ["Все проекты", "BI & Analytics", "Machine Learning", "Data Engineering", "Customer Analytics", "IoT & Logistics", "Quality Control"];
 
 const Projects = () => {
+  const [activeCategory, setActiveCategory] = useState("Все проекты");
+  
+  const filteredProjects = activeCategory === "Все проекты" 
+    ? projects 
+    : projects.filter(project => project.category === activeCategory);
   return (
     <div className="min-h-screen">
       <Header />
@@ -81,9 +87,10 @@ const Projects = () => {
             {categories.map((category, index) => (
               <Button 
                 key={index}
-                variant={index === 0 ? "default" : "outline"}
+                variant={activeCategory === category ? "default" : "outline"}
                 size="sm"
                 className="text-sm"
+                onClick={() => setActiveCategory(category)}
               >
                 {category}
               </Button>
@@ -96,7 +103,7 @@ const Projects = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {projects.map((project, index) => (
+            {filteredProjects.map((project, index) => (
               <div key={index} className="bg-card border border-border rounded-xl p-8 hover:shadow-elegant transition-all duration-300">
                 <div className="flex justify-between items-start mb-4">
                   <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">

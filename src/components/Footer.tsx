@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -5,28 +7,28 @@ const Footer = () => {
     {
       title: "Услуги",
       links: [
-        { name: "Системная интеграция", href: "#systems" },
-        { name: "Импортозамещение", href: "#import" },
-        { name: "Аутстаффинг команд", href: "#outstaffing" },
-        { name: "Аудит проекта", href: "#audit" }
+        { name: "Системная интеграция", href: "/services", internal: true },
+        { name: "Импортозамещение", href: "/services", internal: true },
+        { name: "Аутстаффинг команд", href: "/services", internal: true },
+        { name: "Аудит проекта", href: "/services", internal: true }
       ]
     },
     {
       title: "Компания",
       links: [
-        { name: "О нас", href: "#about" },
-        { name: "Команда", href: "#team" },
-        { name: "Карьера", href: "#career" },
-        { name: "Контакты", href: "#contacts" }
+        { name: "О нас", href: "/about", internal: true },
+        { name: "Команда", href: "/about", internal: true },
+        { name: "Карьера", href: "/about", internal: true },
+        { name: "Контакты", href: "/about", internal: true }
       ]
     },
     {
       title: "Ресурсы",
       links: [
-        { name: "Блог", href: "#blog" },
-        { name: "Кейсы", href: "#cases" },
-        { name: "Документация", href: "#docs" },
-        { name: "Поддержка", href: "#support" }
+        { name: "Блог", href: "/projects", internal: true },
+        { name: "Кейсы", href: "/projects", internal: true },
+        { name: "Документация", href: "/competencies", internal: true },
+        { name: "Поддержка", href: "/about", internal: true }
       ]
     }
   ];
@@ -66,12 +68,21 @@ const Footer = () => {
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
-                    <a 
-                      href={link.href}
-                      className="text-background/70 hover:text-white transition-colors text-sm"
-                    >
-                      {link.name}
-                    </a>
+                    {link.internal ? (
+                      <Link 
+                        to={link.href}
+                        className="text-background/70 hover:text-white transition-colors text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    ) : (
+                      <a 
+                        href={link.href}
+                        className="text-background/70 hover:text-white transition-colors text-sm"
+                      >
+                        {link.name}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>
